@@ -36,7 +36,7 @@ const LoginPage = ({ afterLogin }) => {
     <div className={styles.container}>
       <div className={styles.formWrapper}>
         <div className={styles.headerSection}>
-          <LogIn className={styles.headerIcon} size={32} />
+          {/* <LogIn className={styles.headerIcon} size={32} /> */}
           <h1 className={styles.title}>Welcome Back</h1>
           <p className={styles.subtitle}>Sign in to continue to your account</p>
         </div>

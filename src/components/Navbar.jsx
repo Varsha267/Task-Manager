@@ -21,14 +21,6 @@ const Navbar = ({ currUser, handleLogout }) => {
                     <CheckSquare size={18} />
                     <span>Tasks</span>
                 </Link>
-                <Link to="/login" className={styles.link}>
-                    <LogIn size={18} />
-                    <span>Login</span>
-                </Link>
-                <Link to="/sign-up" className={styles.link}>
-                    <UserPlus size={18} />
-                    <span>Sign Up</span>
-                </Link>
                 <button className={styles.button} onClick={handleLogout}>
                     <LogOut size={18} />
                     <span>Logout</span>

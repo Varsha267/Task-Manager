@@ -1,6 +1,6 @@
 .task-page-container {
   min-height: 100vh;
-  background-color: #f0f2f5;
+  background-color: #f0f0f0;
   color: #1a1a1a;
 }
 
@@ -136,7 +136,7 @@
 .filters-section {
   margin-bottom: 2rem;
   padding: 1.5rem;
-  background: white;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1));
   border-radius: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -150,7 +150,7 @@
 }
 
 .tasks-column {
-  background: white;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1));;
   border-radius: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   height: calc(100vh - 300px);

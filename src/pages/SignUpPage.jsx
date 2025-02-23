@@ -79,7 +79,7 @@ const SignUpPage = () => {
     <div className={styles.container}>
       <div className={styles.formWrapper}>
         <div className={styles.headerSection}>
-          <UserPlus className={styles.headerIcon} size={32} />
+         
           <h1 className={styles.title}>Create Account</h1>
           <p className={styles.subtitle}>
             {isOtpSent

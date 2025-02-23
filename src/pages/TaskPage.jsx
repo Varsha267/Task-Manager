@@ -116,7 +116,7 @@ const TaskPage = ({ currUser, handleLogout }) => {
                   list={list}
                   getData={getData}
                   filterObj={{ ...filtersObj, status: "done" }}
-                  title="Done List"
+                  title="Done Lists"
                 />
               </div>
             </section>

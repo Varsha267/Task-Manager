@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2.5rem;
-  background: rgba(17, 25, 40, 0.75);
+  background: #9B51E0;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -75,7 +75,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #9B51E0 0%,#8a40cf 100%);
   color: white;
   padding: 0.5rem 1.25rem;
   border: none;
@@ -90,7 +90,8 @@
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+  box-shadow: 0 4px 12px #dc2626;
+  background: #dc2626;
 }
 
 .button:active {

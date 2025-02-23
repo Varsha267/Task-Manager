@@ -23,7 +23,7 @@ const TaskFilters = ({ setFiltersObj }) => {
                 <div className="filter-group">
                     <div className="filter-label">
                         <ArrowDown size={16} />
-                        <span>Priority Level</span>
+                        <span>Priority Levels</span>
                     </div>
                     <div className="priority-options">
                         <button

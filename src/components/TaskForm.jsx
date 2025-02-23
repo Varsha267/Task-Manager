@@ -46,7 +46,7 @@ const TaskForm = ({ getData }) => {
       assignee,
       deadline,
       priority,
-      assignor: "Likhilesh",
+      assignor: "Varsha",
     };
 
     const success = await addTask(dataObj);

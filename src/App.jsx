@@ -141,7 +141,7 @@ function App() {
             path="*"
             element={
               <div>
-                Page not found <Link to="/">Home</Link>
+                Page not founds <Link to="/">Home</Link>
               </div>
             }
           />

@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./HomePage.css";
+import taskImg from '../assets/img.png';
+import Navbar from "../components/Navbar";
 
 const HomePage = ({ currUser, handleLogout }) => {
   const canvasRef = useRef(null);
@@ -82,52 +84,39 @@ const HomePage = ({ currUser, handleLogout }) => {
         "Set and monitor team and personal goals with visual progress",
       color: "from-emerald-500 to-green-500",
     },
-    {
-      icon: "🤝",
-      title: "Team Sync",
-      description:
-        "Seamless collaboration with integrated chat and file sharing",
-      color: "from-orange-500 to-amber-500",
-    },
-    {
-      icon: "📊",
-      title: "Custom Workflows",
-      description: "Create and optimize workflows that match your team's needs",
-      color: "from-pink-500 to-rose-500",
-    },
-    {
-      icon: "🔄",
-      title: "Integration Hub",
-      description: "Connect with your favorite tools and services effortlessly",
-      color: "from-indigo-500 to-blue-500",
-    },
+    
+   
   ];
 
   return (
     <div className="home-page">
+       <Navbar currUser={currUser} handleLogout={handleLogout} />
       <canvas ref={canvasRef} className="particle-canvas" />
 
       <div className="content-wrapper">
         {/* Hero Section */}
         <section className="hero-section">
           <div className="hero-content">
-            <h1 className="hero-title">Transform Your Workflow</h1>
+            <h1 className="hero-title">Welcome to Task Management Tool</h1>
             <p className="hero-subtitle">
-              Streamline tasks, boost productivity, and achieve more together
+            Your personal productivity dashboard
             </p>
             <Link to="/tasks" className="cta-button">
               Get Started
               <span className="arrow-icon">→</span>
             </Link>
           </div>
+          <div className='hero-image'>
+         <img src={taskImg} alt='Task Management Illustration' />
+        </div>
         </section>
 
         {/* Features Section */}
         <section className="features-section">
           <div className="section-header">
-            <h2 className="section-title">Supercharge Your Productivity</h2>
+            <h2 className="section-title">FEATURES</h2>
             <p className="section-subtitle">
-              Discover powerful tools designed to transform how you work
+              Discover powerful tools
             </p>
           </div>
 
@@ -148,17 +137,6 @@ const HomePage = ({ currUser, handleLogout }) => {
           </div>
         </section>
 
-        {/* Call to Action Section */}
-        <section className="cta-section">
-          <div className="cta-content">
-            <h2>Ready to Transform Your Workflow?</h2>
-            <p>Join thousands of teams already using our platform</p>
-            <Link to="/signup" className="cta-button secondary">
-              Start Free Trial
-              <span className="arrow-icon">→</span>
-            </Link>
-          </div>
-        </section>
 
         {/* Footer */}
         <footer className="home-footer">
